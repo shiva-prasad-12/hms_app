@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number of rooms:</strong>
+  <%= @reserved_room.number_of_rooms %>
+</p>
+
+<p>
+  <strong>Roomtype:</strong>
+  <%= @reserved_room.roomtype %>
+</p>
+
+<p>
+  <strong>Reservation:</strong>
+  <%= @reserved_room.reservation %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @reserved_room.status %>
+</p>
+
+<%= link_to 'Edit', edit_reserved_room_path(@reserved_room) %> |
+<%= link_to 'Back', reserved_rooms_path %>

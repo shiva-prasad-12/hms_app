@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_of_rooms: 1
+  roomtype_id: 
+  reservation_id: 
+  status: MyString
+
+two:
+  number_of_rooms: 1
+  roomtype_id: 
+  reservation_id: 
+  status: MyString

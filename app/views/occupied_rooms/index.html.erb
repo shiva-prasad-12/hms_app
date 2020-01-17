@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Occupied Rooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Check in</th>
+      <th>Check out</th>
+      <th>Room</th>
+      <th>Reservation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @occupied_rooms.each do |occupied_room| %>
+      <tr>
+        <td><%= occupied_room.check_in %></td>
+        <td><%= occupied_room.check_out %></td>
+        <td><%= occupied_room.room %></td>
+        <td><%= occupied_room.reservation %></td>
+        <td><%= link_to 'Show', occupied_room %></td>
+        <td><%= link_to 'Edit', edit_occupied_room_path(occupied_room) %></td>
+        <td><%= link_to 'Destroy', occupied_room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Occupied room', new_occupied_room_path %>
